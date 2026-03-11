@@ -29,62 +29,56 @@ a:focus {
   color: #02679b;
 }
 
-/* Improve readability */
 p,
 li {
   line-height: 1.65;
-}
-
-/* Project CTAs */
-
-.project-actions {
-  margin-top: 14px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.project-button {
-  font-size: 0.85rem;
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(3, 65, 97, 0.2);
-  color: #034161;
-  text-decoration: none;
-  background: rgba(3, 65, 97, 0.05);
-  transition: all 0.2s ease;
-}
-
-.project-button:hover {
-  background: #034161;
-  color: white;
-  transform: translateY(-1px);
 }
 
 /* =========================
    Layout improvements
    ========================= */
 
+.wrapper {
+  width: min(94vw, 1320px);
+}
+
+section {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* Desktop layout: wider and closer columns */
 @media screen and (min-width: 981px) {
   .wrapper {
-    width: min(1180px, 92vw);
-  }
-
-  section {
-    width: 68%;
+    width: min(94vw, 1320px);
   }
 
   aside,
   .sidebar {
-    width: 26%;
+    width: 27%;
+  }
+
+  section {
+    width: 71%;
+    padding-left: 6px;
+    padding-right: 6px;
   }
 }
 
-/* Better reading width for long text */
-section,
-.page-content,
-.profile-copy {
-  max-width: 68ch;
+/* Wider cards, but keep text readable */
+section > p,
+section > ul,
+section > ol,
+section > blockquote {
+  max-width: 74ch;
+}
+
+/* Headings can use more width than body copy */
+section > h2,
+section > h3,
+.project-grid,
+.profile-links {
+  max-width: 100%;
 }
 
 /* =========================
@@ -93,20 +87,21 @@ section,
 
 .sidebar,
 aside {
-  padding-top: 12px;
+  padding-top: 8px;
 }
 
 .sidebar h1,
 aside h1 {
   margin-bottom: 10px;
-  line-height: 1.08;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
 }
 
 /* Responsive title sizing */
 .site-title,
 .sidebar h1,
 aside h1 {
-  font-size: clamp(22px, 2.6vw, 38px);
+  font-size: clamp(22px, 2.4vw, 38px);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -117,11 +112,10 @@ aside p {
   color: #4b5563;
 }
 
-/* Profile image */
 .sidebar img,
 aside img {
   border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(3, 65, 97, 0.12);
+  box-shadow: 0 12px 32px rgba(3, 65, 97, 0.12);
 }
 
 /* =========================
@@ -140,7 +134,7 @@ aside img {
   display: flex;
   align-items: center;
   gap: 14px;
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   line-height: 1.4;
   color: #5f6368;
 }
@@ -175,27 +169,56 @@ aside img {
 }
 
 /* =========================
-   Content spacing
+   Content spacing / hierarchy
    ========================= */
 
 section > h2 {
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  margin-top: 2.4rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.55rem;
+  color: #034161;
+  letter-spacing: -0.02em;
+}
+
+section > h2:first-of-type {
+  margin-top: 0;
 }
 
 section h3 {
-  margin-top: 2.2rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.2rem;
+  color: #1f2937;
+  letter-spacing: -0.015em;
 }
 
 section > p + p {
-  margin-top: 0.9rem;
+  margin-top: 0.85rem;
 }
 
 section hr {
-  margin: 1.75rem 0;
+  margin: 1.6rem 0;
   border: 0;
   border-top: 1px solid rgba(3, 65, 97, 0.12);
+}
+
+/* =========================
+   Project grid
+   ========================= */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 1.25rem;
+  align-items: stretch;
+}
+
+/* 3-column layout on large desktop */
+@media screen and (min-width: 1280px) {
+  .project-grid {
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+  }
 }
 
 /* =========================
@@ -203,9 +226,11 @@ section hr {
    ========================= */
 
 .project-card {
-  padding: 20px 22px;
-  margin-bottom: 18px;
-  border: 1px solid rgba(3, 65, 97, 0.10);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 20px;
+  border: 1px solid rgba(3, 65, 97, 0.1);
   border-radius: 16px;
   background: #ffffff;
   box-shadow: 0 6px 20px rgba(3, 65, 97, 0.05);
@@ -214,20 +239,26 @@ section hr {
 
 .project-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(3, 65, 97, 0.10);
-  border-color: rgba(3, 65, 97, 0.22);
+  box-shadow: 0 14px 30px rgba(3, 65, 97, 0.1);
+  border-color: rgba(3, 65, 97, 0.2);
 }
 
 .project-card h4,
 .project-card h3 {
   margin-top: 0;
   margin-bottom: 0.55rem;
+  line-height: 1.25;
 }
 
 .project-card p {
+  flex-grow: 1;
   margin-bottom: 0;
   color: #4b5563;
 }
+
+/* =========================
+   Project tech tags
+   ========================= */
 
 .project-tags {
   display: flex;
@@ -240,42 +271,17 @@ section hr {
   display: inline-block;
   padding: 6px 10px;
   border-radius: 999px;
-  background: rgba(3, 65, 97, 0.08);
+  background: rgba(3, 65, 97, 0.07);
   color: #034161;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 500;
   line-height: 1;
   border: 1px solid rgba(3, 65, 97, 0.08);
 }
 
 /* =========================
-   Project grid
+   Project CTAs
    ========================= */
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
-  gap: 22px;
-  margin-top: 1.25rem;
-  align-items: stretch;
-}
-
-.project-card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 22px;
-  border: 1px solid rgba(3, 65, 97, 0.10);
-  border-radius: 16px;
-  background: #ffffff;
-  box-shadow: 0 6px 20px rgba(3, 65, 97, 0.05);
-}
-
-.project-card p {
-  flex-grow: 1;
-  margin-bottom: 0;
-}
-/* Project CTAs */
 
 .project-actions {
   margin-top: 16px;
@@ -293,11 +299,12 @@ section hr {
   border: 1px solid #034161;
   background: #ffffff;
   color: #034161;
-  font-size: 0.88rem;
+  font-size: 0.87rem;
   font-weight: 600;
   text-decoration: none;
+  box-shadow: none;
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease,
-    box-shadow 0.2s ease;
+    box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .project-button:hover,
@@ -308,10 +315,10 @@ section hr {
   box-shadow: 0 8px 18px rgba(3, 65, 97, 0.12);
 }
 
-/* Primary CTA */
 .project-button.primary {
   background: #034161;
   color: #ffffff;
+  border-color: #034161;
 }
 
 .project-button.primary:hover,
@@ -320,16 +327,8 @@ section hr {
   border-color: #02679b;
 }
 
-/* Responsive breakpoints */
-
-@media screen and (max-width: 980px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* =========================
-   Buttons / CTA links
+   Generic buttons
    ========================= */
 
 .button,
@@ -346,16 +345,14 @@ input[type="button"]:hover {
   transform: translateY(-1px);
 }
 
-.project-button:first-child {
-  background: #034161;
-  color: #ffffff;
-  border-color: #034161;
-}
+/* =========================
+   Responsive breakpoints
+   ========================= */
 
-.project-button:first-child:hover,
-.project-button:first-child:focus {
-  background: #02679b;
-  border-color: #02679b;
+@media screen and (max-width: 980px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* =========================
@@ -405,9 +402,10 @@ input[type="button"]:hover {
     text-align: left;
   }
 
-  section,
-  .page-content,
-  .profile-copy {
+  section > p,
+  section > ul,
+  section > ol,
+  section > blockquote {
     max-width: 100%;
   }
 
