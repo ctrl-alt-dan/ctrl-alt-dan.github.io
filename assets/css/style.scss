@@ -3,7 +3,105 @@
 
 @import "{{ site.theme }}";
 
-/* Contact block */
+/* =========================
+   Brand / Global overrides
+   ========================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #374151;
+  background-color: #ffffff;
+}
+
+a,
+a:visited {
+  color: #034161;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+  transition: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+
+a:hover,
+a:focus {
+  color: #02679b;
+}
+
+/* Improve readability */
+p,
+li {
+  line-height: 1.65;
+}
+
+/* =========================
+   Layout improvements
+   ========================= */
+
+@media screen and (min-width: 981px) {
+  .wrapper {
+    width: min(1180px, 92vw);
+  }
+
+  section {
+    width: 68%;
+  }
+
+  aside,
+  .sidebar {
+    width: 26%;
+  }
+}
+
+/* Better reading width for long text */
+section,
+.page-content,
+.profile-copy {
+  max-width: 68ch;
+}
+
+/* =========================
+   Sidebar / Profile
+   ========================= */
+
+.sidebar,
+aside {
+  padding-top: 12px;
+}
+
+.sidebar h1,
+aside h1 {
+  margin-bottom: 10px;
+  line-height: 1.08;
+}
+
+/* Responsive title sizing */
+.site-title,
+.sidebar h1,
+aside h1 {
+  font-size: clamp(22px, 2.6vw, 38px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar p,
+aside p {
+  color: #4b5563;
+}
+
+/* Profile image */
+.sidebar img,
+aside img {
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(3, 65, 97, 0.12);
+}
+
+/* =========================
+   Contact / Social block
+   ========================= */
+
 .profile-links {
   margin-top: 28px;
   display: flex;
@@ -16,6 +114,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
+  font-size: 1.05rem;
   line-height: 1.4;
   color: #5f6368;
 }
@@ -27,6 +126,18 @@
   flex-shrink: 0;
 }
 
+.profile-text-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #5f6368;
+  flex-shrink: 0;
+}
+
 .profile-item a,
 .profile-item span {
   color: #5f6368;
@@ -34,38 +145,118 @@
 }
 
 .profile-item a:hover {
-  color: #111;
-}
-
-a {
   color: #034161;
 }
 
-a:hover {
-  color: #02679B;
+/* =========================
+   Content spacing
+   ========================= */
+
+section > h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.site-title {
+section h3 {
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+section > p + p {
+  margin-top: 0.9rem;
+}
+
+section hr {
+  margin: 1.75rem 0;
+  border: 0;
+  border-top: 1px solid rgba(3, 65, 97, 0.12);
+}
+
+/* =========================
+   Project cards
+   ========================= */
+
+.project-card {
+  padding: 20px 22px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(3, 65, 97, 0.10);
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(3, 65, 97, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(3, 65, 97, 0.10);
+  border-color: rgba(3, 65, 97, 0.22);
+}
+
+.project-card h4,
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.55rem;
+}
+
+.project-card p {
+  margin-bottom: 0;
+  color: #4b5563;
+}
+
+/* Optional helper if you want tags later */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.project-tag {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(3, 65, 97, 0.08);
   color: #034161;
+  font-size: 0.85rem;
+  line-height: 1;
 }
 
-.site-title {
-  font-size: clamp(20px, 3.2vw, 36px);
-  white-space: nowrap;
+/* =========================
+   Buttons / CTA links
+   ========================= */
+
+.button,
+button,
+input[type="submit"],
+input[type="button"] {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Mobile layout improvements */
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  transform: translateY(-1px);
+}
+
+/* =========================
+   Mobile improvements
+   ========================= */
 
 @media screen and (max-width: 768px) {
+  .wrapper {
+    width: 92%;
+    padding: 0 16px;
+  }
 
-  /* Center the sidebar content */
-  .sidebar {
+  .sidebar,
+  aside {
     text-align: center;
     padding: 10px 20px 20px 20px;
   }
 
-  /* Reduce profile image size */
-  .sidebar img {
+  .sidebar img,
+  aside img {
     width: 65%;
     max-width: 65%;
     display: block;
@@ -73,26 +264,36 @@ a:hover {
     border-radius: 12px;
   }
 
-  /* Improve name/title spacing */
-  .sidebar h1 {
+  .sidebar h1,
+  aside h1 {
     margin-top: 6px;
     margin-bottom: 12px;
   }
 
-  /* Bio text spacing */
-  .sidebar p {
+  .sidebar p,
+  aside p {
     margin-bottom: 18px;
     line-height: 1.5;
   }
 
-  /* Contact links block */
   .profile-links {
     align-items: center;
+    max-width: 100%;
   }
 
-    .wrapper {
-    width: 92%;
-    padding: 0 16px;
+  .profile-item {
+    justify-content: center;
+    text-align: left;
   }
 
+  section,
+  .page-content,
+  .profile-copy {
+    max-width: 100%;
+  }
+
+  .project-card {
+    padding: 18px 16px;
+    border-radius: 14px;
+  }
 }
