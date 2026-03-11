@@ -17,7 +17,20 @@
     <span class="project-tag">Deep Learning</span>
   </div>
 </div>
+<div class="project-card">
+  <h4><a href="#">Amazon Review Sentiment Analysis</a></h4>
+  <p>
+    NLP sentiment analysis project using traditional machine learning models to classify
+    customer review sentiment and compare model performance.
+  </p>
 
+  <div class="project-tags">
+    <span class="project-tag">Python</span>
+    <span class="project-tag">NLP</span>
+    <span class="project-tag">Scikit-learn</span>
+    <span class="project-tag">TF-IDF</span>
+  </div>
+</div>
 ---
 
 ### Category Name 1 
