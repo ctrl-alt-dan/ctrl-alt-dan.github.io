@@ -35,6 +35,32 @@ li {
   line-height: 1.65;
 }
 
+/* Project CTAs */
+
+.project-actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-button {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(3, 65, 97, 0.2);
+  color: #034161;
+  text-decoration: none;
+  background: rgba(3, 65, 97, 0.05);
+  transition: all 0.2s ease;
+}
+
+.project-button:hover {
+  background: #034161;
+  color: white;
+  transform: translateY(-1px);
+}
+
 /* =========================
    Layout improvements
    ========================= */
