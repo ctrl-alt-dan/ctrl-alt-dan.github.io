@@ -328,6 +328,18 @@ input[type="button"]:hover {
   transform: translateY(-1px);
 }
 
+.project-button:first-child {
+  background: #034161;
+  color: #ffffff;
+  border-color: #034161;
+}
+
+.project-button:first-child:hover,
+.project-button:first-child:focus {
+  background: #02679b;
+  border-color: #02679b;
+}
+
 /* =========================
    Mobile improvements
    ========================= */
