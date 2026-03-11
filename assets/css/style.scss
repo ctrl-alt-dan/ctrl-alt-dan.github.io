@@ -54,14 +54,45 @@ a:hover {
   white-space: nowrap;
 }
 
+/* Mobile layout improvements */
+
 @media screen and (max-width: 768px) {
 
+  /* Center the sidebar content */
+  .sidebar {
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+  }
+
+  /* Reduce profile image size */
   .sidebar img {
     width: 65%;
     max-width: 65%;
     display: block;
     margin: 20px auto 28px auto;
     border-radius: 12px;
+  }
+
+  /* Improve name/title spacing */
+  .sidebar h1 {
+    margin-top: 6px;
+    margin-bottom: 12px;
+  }
+
+  /* Bio text spacing */
+  .sidebar p {
+    margin-bottom: 18px;
+    line-height: 1.5;
+  }
+
+  /* Contact links block */
+  .profile-links {
+    align-items: center;
+  }
+
+    .wrapper {
+    width: 92%;
+    padding: 0 16px;
   }
 
 }
