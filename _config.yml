@@ -27,7 +27,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   
     <div class="profile-item">
       <img src="/assets/email.png" alt="Email" class="profile-icon">
-      <a href="mailto:daniel@lifamily.com">daniel@lifamily.com</a>
+      <a href="mailto:daniel@lifamily.me">daniel@lifamily.me</a>
     </div>
   </div>
 remote_theme: pages-themes/minimal@v0.2.0
