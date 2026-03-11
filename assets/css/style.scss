@@ -53,3 +53,15 @@ a:hover {
   font-size: clamp(20px, 3.2vw, 36px);
   white-space: nowrap;
 }
+
+@media screen and (max-width: 768px) {
+
+  .sidebar img {
+    width: 65%;
+    max-width: 65%;
+    display: block;
+    margin: 20px auto 28px auto;
+    border-radius: 12px;
+  }
+
+}
