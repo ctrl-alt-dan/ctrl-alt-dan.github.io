@@ -13,23 +13,23 @@ description: > # your text below (remove <br> elements if you don't need line br
   Recently completed a Certificate in Data Science & AI with hands-on experience in Python, SQL, statistical analysis, machine learning, and predictive modelling. Experienced in data cleaning, exploratory analysis, experimentation, and translating complex datasets into clear insights that improve revenue, operational efficiency, and customer experience.
   <br><br>
   </p>
-<!-- Contact / Social Block -->
-<div class="profile-links">
-  <div class="profile-item">
-    <img src="assets/nearby.png" alt="Location icon" class="profile-icon" />
-    <span>Sylvania, NSW, Australia</span>
+  <!-- Contact / Social Block -->
+  <div class="profile-links">
+    <div class="profile-item">
+      <img src="/assets/nearby.png" alt="Location" class="profile-icon">
+      <span>Sydney, Australia</span>
+    </div>
+  
+    <div class="profile-item">
+      <img src="/assets/phone.png" alt="Phone" class="profile-icon">
+      <a href="tel:+61450051428">0450 051 428</a>
+    </div>
+  
+    <div class="profile-item">
+      <img src="/assets/email.png" alt="Email" class="profile-icon">
+      <a href="mailto:daniel@lifamily.com">daniel@lifamily.com</a>
+    </div>
   </div>
-
-  <div class="profile-item">
-    <img src="assets/phone.png" alt="Phone icon" class="profile-icon" />
-    <a href="tel:+61412345678">0450 051 428</a>
-  </div>
-
-  <div class="profile-item">
-    <img src="assets/email.png" alt="Email icon" class="profile-icon" />
-    <a href="mailto:daniel@lifamily.com">daniel@lifamily.com</a>
-  </div>
-</div>
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
 - jekyll-remote-theme
