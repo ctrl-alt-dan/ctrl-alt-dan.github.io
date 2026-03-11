@@ -17,8 +17,8 @@
     <span class="project-tag">Deep Learning</span>
   </div>
   <div class="project-actions">
-    <a class="project-button" href="GITHUB_LINK">View Code</a>
-    <a class="project-button" href="SLIDES_LINK">Slides</a>
+    <a class="project-button" href="https://github.com/ctrl-alt-dan/handwriting-recognition-with-CNN">View Code</a>
+    <a class="project-button" href="pdf/Capstone-Powerpoint-Presentation.pdf">Slides</a>
   </div>
 </div>
 <div class="project-card">
@@ -35,8 +35,8 @@
     <span class="project-tag">TF-IDF</span>
   </div>
   <div class="project-actions">
-    <a class="project-button" href="GITHUB_LINK">View Code</a>
-    <a class="project-button" href="SLIDES_LINK">Slides</a>
+    <a class="project-button" href="https://github.com/ctrl-alt-dan/Customer-Review-Sentiment-Analysis">View Code</a>
+    <a class="project-button" href="pdf/Presentation-Amazon-Sentiment-analysis-Mini-Project-3.pdf">Slides</a>
   </div>
 </div>
 ---
