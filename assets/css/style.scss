@@ -4,7 +4,7 @@
 @import "{{ site.theme }}";
 
 /* =========================
-   Brand / Global overrides
+   Global / Brand
    ========================= */
 
 html {
@@ -35,7 +35,7 @@ li {
 }
 
 /* =========================
-   Layout improvements
+   Layout
    ========================= */
 
 .wrapper {
@@ -47,12 +47,7 @@ section {
   padding-right: 8px;
 }
 
-/* Desktop layout: wider and closer columns */
 @media screen and (min-width: 981px) {
-  .wrapper {
-    width: min(94vw, 1320px);
-  }
-
   aside,
   .sidebar {
     width: 27%;
@@ -65,7 +60,6 @@ section {
   }
 }
 
-/* Wider cards, but keep text readable */
 section > p,
 section > ul,
 section > ol,
@@ -73,7 +67,6 @@ section > blockquote {
   max-width: 74ch;
 }
 
-/* Headings and structured blocks can use full width */
 section > h2,
 section > h3,
 .project-grid,
@@ -97,7 +90,6 @@ aside h1 {
   letter-spacing: -0.02em;
 }
 
-/* Responsive title sizing */
 .site-title,
 .sidebar h1,
 aside h1 {
@@ -119,7 +111,7 @@ aside img {
 }
 
 /* =========================
-   Contact / Social block
+   Contact links
    ========================= */
 
 .profile-links {
@@ -143,19 +135,6 @@ aside img {
   width: 22px;
   height: 22px;
   object-fit: contain;
-  flex-shrink: 0;
-}
-
-.profile-text-icon {
-  width: 22px;
-  height: 22px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #5f6368;
-  flex-shrink: 0;
 }
 
 .profile-item a,
@@ -169,7 +148,7 @@ aside img {
 }
 
 /* =========================
-   Content spacing / hierarchy
+   Section spacing
    ========================= */
 
 section > h2 {
@@ -189,15 +168,10 @@ section h3 {
   margin-bottom: 0.9rem;
   font-size: 1.2rem;
   color: #1f2937;
-  letter-spacing: -0.015em;
-}
-
-section > p + p {
-  margin-top: 0.85rem;
 }
 
 section hr {
-  margin: 2.2rem 0 1.8rem 0;
+  margin: 3rem 0 2rem 0;
   border: 0;
   border-top: 1px solid rgba(3, 65, 97, 0.12);
   clear: both;
@@ -210,13 +184,12 @@ section hr {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(320px, 1fr));
-  gap: 24px;
-  margin-top: 1.25rem;
-  margin-bottom: 3.25rem;
+  gap: 26px;
+  margin-top: 1.4rem;
+  margin-bottom: 3rem;
   align-items: stretch;
 }
 
-/* 3-column layout on large desktop */
 @media screen and (min-width: 1280px) {
   .project-grid {
     grid-template-columns: repeat(3, minmax(260px, 1fr));
@@ -235,19 +208,18 @@ section hr {
   border: 1px solid rgba(3, 65, 97, 0.1);
   border-radius: 16px;
   background: #ffffff;
-  box-shadow: 0 6px 20px rgba(3, 65, 97, 0.05);
+  box-shadow: 0 4px 14px rgba(3, 65, 97, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   overflow: hidden;
 }
 
 .project-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(3, 65, 97, 0.1);
-  border-color: rgba(3, 65, 97, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(3, 65, 97, 0.12);
+  border-color: rgba(3, 65, 97, 0.18);
 }
 
-.project-card h4,
-.project-card h3 {
+.project-card h4 {
   margin-top: 0;
   margin-bottom: 0.55rem;
   line-height: 1.25;
@@ -260,7 +232,7 @@ section hr {
 }
 
 /* =========================
-   Project tech tags
+   Tech tags
    ========================= */
 
 .project-tags {
@@ -271,19 +243,17 @@ section hr {
 }
 
 .project-tag {
-  display: inline-block;
   padding: 6px 10px;
   border-radius: 999px;
   background: rgba(3, 65, 97, 0.07);
   color: #034161;
   font-size: 0.8rem;
   font-weight: 500;
-  line-height: 1;
   border: 1px solid rgba(3, 65, 97, 0.08);
 }
 
 /* =========================
-   Project CTAs
+   CTA buttons
    ========================= */
 
 .project-actions {
@@ -294,9 +264,6 @@ section hr {
 }
 
 .project-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   padding: 8px 14px;
   border-radius: 10px;
   border: 1px solid #034161;
@@ -305,51 +272,23 @@ section hr {
   font-size: 0.87rem;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: none;
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease,
-    box-shadow 0.2s ease, border-color 0.2s ease;
+    box-shadow 0.2s ease;
 }
 
-.project-button:hover,
-.project-button:focus {
+.project-button:hover {
   background: #034161;
   color: #ffffff;
-  transform: translateY(-1px);
   box-shadow: 0 8px 18px rgba(3, 65, 97, 0.12);
 }
 
 .project-button.primary {
   background: #034161;
   color: #ffffff;
-  border-color: #034161;
-}
-
-.project-button.primary:hover,
-.project-button.primary:focus {
-  background: #02679b;
-  border-color: #02679b;
 }
 
 /* =========================
-   Generic buttons
-   ========================= */
-
-.button,
-button,
-input[type="submit"],
-input[type="button"] {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="button"]:hover {
-  transform: translateY(-1px);
-}
-
-/* =========================
-   Responsive breakpoints
+   Responsive grid
    ========================= */
 
 @media screen and (max-width: 980px) {
@@ -371,49 +310,31 @@ input[type="button"]:hover {
   .sidebar,
   aside {
     text-align: center;
-    padding: 10px 34px 20px 34px;
+    padding: 10px 28px 20px 28px;
   }
 
   .sidebar img,
   aside img {
-    width: 46%;
-    max-width: 46%;
-    display: block;
+    width: 52%;
+    max-width: 52%;
     margin: 18px auto 24px auto;
     border-radius: 12px;
-  }
-
-  .sidebar h1,
-  aside h1 {
-    margin-top: 6px;
-    margin-bottom: 12px;
   }
 
   .sidebar p,
   aside p {
     margin-bottom: 18px;
-    line-height: 1.5;
   }
 
   .profile-links {
     align-items: center;
-    max-width: 100%;
   }
 
   .profile-item {
     justify-content: center;
-    text-align: left;
-  }
-
-  section > p,
-  section > ul,
-  section > ol,
-  section > blockquote {
-    max-width: 100%;
   }
 
   .project-card {
     padding: 18px 16px;
-    border-radius: 14px;
   }
 }
