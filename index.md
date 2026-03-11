@@ -118,7 +118,7 @@
 Recently completed a Certificate in Data Science & AI with hands-on project work across machine learning, deep learning, NLP, forecasting, and data storytelling. Built portfolio projects using Python, SQL, PyTorch, scikit-learn, and data visualisation workflows to translate technical analysis into business-ready insights.
 
 #### Ecommerce & Digital Analytics
-6+ years of experience across ecommerce, digital performance, customer insight, and growth-focused analysis. Worked across customer behaviour, campaign performance, experimentation, optimisation, and commercial reporting to improve digital outcomes and support business decision-making.
+6+ years of experience across ecommerce, digital performance, customer insight, and growth-focused analysis. Worked across customer behaviour, marketing campaign performance, marketing Channel strategy, experimentation, optimisation, and commercial reporting to improve digital outcomes and support business decision-making.
 
 #### Previous Roles
 - Ecommerce and digital leadership experience across retail and consumer brands
@@ -129,18 +129,9 @@ Recently completed a Certificate in Data Science & AI with hands-on project work
 
 ### Education & Certifications
 
-- Certificate in Data Science & AI
-- Institute of Data x University of Technology Sydney
-- Practical training in Python, SQL, statistical analysis, machine learning, predictive modelling, and data visualisation
-
----
-
-### Contact
-
-Feel free to connect for opportunities in data analytics, data science, AI, ecommerce analytics, or commercial insight roles.
-
-- <a href="mailto:daniel@lifamily.me">daniel@lifamily.me</a>
-- <a href="https://www.linkedin.com/in/danliwork/">LinkedIn</a>
-- <a href="https://github.com/ctrl-alt-dan">GitHub</a>
+- Certificat in Databases and SQL for Data Science with Python from IBM
+- Certificate in Data Science & AI at University of Technology Sydney & Institute of Data
+- Masters Degree in Strategic Management & Marketing at Univesity of Wollongong
+- Bachelor of Commerce in Marketing at University of Wollongong
 
 ---
