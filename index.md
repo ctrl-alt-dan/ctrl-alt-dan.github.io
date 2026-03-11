@@ -39,7 +39,7 @@
 
     <div class="project-actions">
       <a class="project-button" href="https://github.com/ctrl-alt-dan/your-sentiment-project">View Project</a>
-      <a class="project-button" href=""pdf/Presentation-Amazon-Sentiment-analysis-Mini-Project-3.pdf"">Slides</a>
+      <a class="project-button" href="pdf/Presentation-Amazon-Sentiment-analysis-Mini-Project-3.pdf">Slides</a>
     </div>
   </div>
 
