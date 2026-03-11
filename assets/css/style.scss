@@ -83,22 +83,6 @@ aside {
   padding-top: 8px;
 }
 
-.sidebar h1,
-aside h1 {
-  margin-bottom: 10px;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
-}
-
-.site-title,
-.sidebar h1,
-aside h1 {
-  font-size: clamp(22px, 2.4vw, 34px);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .sidebar p,
 aside p {
   color: #4b5563;
@@ -108,6 +92,71 @@ aside p {
 aside img {
   border-radius: 18px;
   box-shadow: 0 12px 32px rgba(3, 65, 97, 0.12);
+}
+
+/* =========================
+   Inline title + tagline
+   ========================= */
+
+.sidebar-header {
+  margin-bottom: 14px;
+}
+
+.site-title-inline {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  margin: 0 0 0.35rem 0;
+  line-height: 1.05;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.site-title-text {
+  font-size: clamp(1.35rem, 1.08rem + 1vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #111827;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.site-tagline-inline {
+  font-size: clamp(0.74rem, 0.66rem + 0.28vw, 0.95rem);
+  font-weight: 500;
+  color: #6b7280;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Fallback styling if old tagline markup still exists */
+.site-tagline {
+  margin-top: -6px;
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Smaller sidebar widths */
+@media screen and (max-width: 980px) {
+  .site-title-inline {
+    justify-content: center;
+  }
+}
+
+/* =========================
+   Sidebar content headings
+   ========================= */
+
+.sidebar-about h2,
+.sidebar-contact h2 {
+  font-size: 1.15rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
+  color: #034161;
 }
 
 /* =========================
@@ -135,6 +184,7 @@ aside img {
   width: 22px;
   height: 22px;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .profile-item a,
@@ -336,65 +386,5 @@ section hr {
 
   .project-card {
     padding: 18px 16px;
-  }
-}
-
-.sidebar-about h2,
-.sidebar-contact h2 {
-  font-size: 1.15rem;
-  margin-top: 1.6rem;
-  margin-bottom: 0.6rem;
-  color: #034161;
-}
-
-.site-tagline {
-  margin-top: -6px;
-  margin-bottom: 14px;
-  font-size: 0.95rem;
-  color: #6b7280;
-  font-weight: 500;
-}
-
-/* =========================
-   Inline title + tagline
-   ========================= */
-
-.sidebar-header {
-  margin-bottom: 14px;
-}
-
-.site-title-inline {
-  display: flex;
-  align-items: baseline;
-  gap: 0.45rem;
-  margin: 0 0 0.35rem 0;
-  line-height: 1.05;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.site-title-text {
-  font-size: clamp(1.35rem, 1.1rem + 1.1vw, 2.15rem);
-  font-weight: 700;
-  letter-spacing: -0.025em;
-  color: #111827;
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.site-tagline-inline {
-  font-size: clamp(0.78rem, 0.68rem + 0.35vw, 1rem);
-  font-weight: 500;
-  color: #6b7280;
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* Smaller sidebar widths */
-@media screen and (max-width: 980px) {
-  .site-title-inline {
-    justify-content: center;
   }
 }
