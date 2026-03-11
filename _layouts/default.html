@@ -16,12 +16,15 @@
     <div class="wrapper">
       <header>
         <div class="sidebar-header">
-          <h1 class="site-title-inline">
-            <span class="site-title-text">{{ site.title | default: site.github.repository_name }}</span>
-            {% if site.tagline %}
-              <span class="site-tagline-inline">{{ site.tagline }}</span>
-            {% endif %}
+          <h1 class="site-title-text">
+            {{ site.title | default: site.github.repository_name }}
           </h1>
+        
+          {% if site.tagline %}
+          <div class="site-tagline-text">
+            {{ site.tagline }}
+          </div>
+          {% endif %}
         </div>
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
