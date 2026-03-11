@@ -6,7 +6,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   <a href="https://www.linkedin.com/in/danliwork/">LinkedIn</a> |
   <a href="https://github.com/ctrl-alt-dan">GitHub</a>
   </p>
-  ## About
+  <h2>About</h2>
   <p align="justify">
   Data-focused analytics professional with 6+ years of experience using data to drive digital performance, customer insights, and business decision-making. 
   <br><br>
@@ -14,7 +14,7 @@ description: > # your text below (remove <br> elements if you don't need line br
   <br><br>
   </p>
   <!-- Contact / Social Block -->
-  ## Contact
+  <h2>Contact</h2>
   <div class="profile-links">
     <div class="profile-item">
       <img src="/assets/nearby.png" alt="Location" class="profile-icon">
