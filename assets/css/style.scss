@@ -354,3 +354,47 @@ section hr {
   color: #6b7280;
   font-weight: 500;
 }
+
+/* =========================
+   Inline title + tagline
+   ========================= */
+
+.sidebar-header {
+  margin-bottom: 14px;
+}
+
+.site-title-inline {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  margin: 0 0 0.35rem 0;
+  line-height: 1.05;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.site-title-text {
+  font-size: clamp(1.35rem, 1.1rem + 1.1vw, 2.15rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #111827;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.site-tagline-inline {
+  font-size: clamp(0.78rem, 0.68rem + 0.35vw, 1rem);
+  font-weight: 500;
+  color: #6b7280;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Smaller sidebar widths */
+@media screen and (max-width: 980px) {
+  .site-title-inline {
+    justify-content: center;
+  }
+}
