@@ -229,7 +229,6 @@ section hr {
   color: #4b5563;
 }
 
-/* Optional helper if you want tags later */
 .project-tags {
   display: flex;
   flex-wrap: wrap;
@@ -243,8 +242,10 @@ section hr {
   border-radius: 999px;
   background: rgba(3, 65, 97, 0.08);
   color: #034161;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 500;
   line-height: 1;
+  border: 1px solid rgba(3, 65, 97, 0.08);
 }
 
 /* =========================
@@ -271,7 +272,7 @@ section hr {
 /* Project CTAs */
 
 .project-actions {
-  margin-top: 14px;
+  margin-top: 16px;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -281,25 +282,36 @@ section hr {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 7px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(3, 65, 97, 0.18);
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid #034161;
+  background: #ffffff;
   color: #034161;
+  font-size: 0.88rem;
+  font-weight: 600;
   text-decoration: none;
-  background: rgba(3, 65, 97, 0.05);
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease,
-    border-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow 0.2s ease;
 }
 
 .project-button:hover,
 .project-button:focus {
   background: #034161;
   color: #ffffff;
-  border-color: #034161;
   transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(3, 65, 97, 0.14);
+  box-shadow: 0 8px 18px rgba(3, 65, 97, 0.12);
+}
+
+/* Primary CTA */
+.project-button.primary {
+  background: #034161;
+  color: #ffffff;
+}
+
+.project-button.primary:hover,
+.project-button.primary:focus {
+  background: #02679b;
+  border-color: #02679b;
 }
 
 /* Responsive breakpoints */
