@@ -3,11 +3,6 @@
 ---
 ### Projects
 ---
-
-<div class="project-card">
-  <h4><a href="#">Handwritten Prescription Recognition</a></h4>
-  <p>78-class CNN classifier built in PyTorch for handwritten medication-name recognition using adaptive pooling, augmentation, and confusion-aware optimisation.</p>
-
   <div class="project-card">
   <h4><a href="#">Handwritten Prescription Recognition</a></h4>
   <p>
