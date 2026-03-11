@@ -16,6 +16,10 @@
     <span class="project-tag">CNN</span>
     <span class="project-tag">Deep Learning</span>
   </div>
+  <div class="project-actions">
+    <a class="project-button" href="GITHUB_LINK">View Code</a>
+    <a class="project-button" href="SLIDES_LINK">Slides</a>
+  </div>
 </div>
 <div class="project-card">
   <h4><a href="#">Amazon Review Sentiment Analysis</a></h4>
@@ -29,6 +33,10 @@
     <span class="project-tag">NLP</span>
     <span class="project-tag">Scikit-learn</span>
     <span class="project-tag">TF-IDF</span>
+  </div>
+  <div class="project-actions">
+    <a class="project-button" href="GITHUB_LINK">View Code</a>
+    <a class="project-button" href="SLIDES_LINK">Slides</a>
   </div>
 </div>
 ---
