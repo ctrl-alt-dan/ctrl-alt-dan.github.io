@@ -130,8 +130,8 @@ Recently completed a Certificate in Data Science & AI with hands-on project work
 ### Education & Certifications
 
 - Certificat in Databases and SQL for Data Science with Python from IBM
-- Certificate in Data Science & AI at University of Technology Sydney & Institute of Data
-- Masters Degree in Strategic Management & Marketing at Univesity of Wollongong
-- Bachelor of Commerce in Marketing at University of Wollongong
+- Certificate in Data Science & AI from University of Technology Sydney & Institute of Data
+- Masters Degree in Strategic Management & Marketing from Univesity of Wollongong
+- Bachelor of Commerce in Marketing from University of Wollongong
 
 ---
