@@ -1,0 +1,39 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Contact block */
+.profile-links {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 420px;
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  color: #5f6368;
+}
+
+.profile-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.profile-item a,
+.profile-item span {
+  color: #5f6368;
+  text-decoration: none;
+}
+
+.profile-item a:hover {
+  color: #111;
+}
