@@ -47,3 +47,7 @@ a:hover {
 .site-title {
   color: #034161;
 }
+.site-title {
+  font-size: clamp(20px, 3.2vw, 36px);
+  white-space: nowrap;
+}
