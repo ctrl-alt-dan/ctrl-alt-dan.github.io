@@ -1,55 +1,85 @@
-## Developer Portfolio Landing Page Template
+# Daniel Li – Data Science & Analytics Portfolio
 
-### ⚠️ Project Discontinued ⚠️
+This repository contains the source code for my personal portfolio website hosted on **GitHub Pages**.
 
-**Note:** This project is no longer maintained and has been discontinued. No further updates or support will be provided. Feel free to fork the repository and make any necessary changes on your own.
+The site showcases selected projects, technical work, and professional experience as I transition into data-focused roles across analytics, machine learning, and applied AI.
+
+**Live site:**  
+https://ctrl-alt-dan.github.io/
 
 ---
 
-### Introduction
+## Purpose of this Repository
 
-Use this template if you need a quick developer / data science portfolio! Based on a Minimal Jekyll theme for GitHub Pages.
+The goal of this portfolio is to demonstrate practical experience applying data science and analytics techniques to real-world problems.
 
-### Installation
+Projects included in the portfolio highlight work across:
 
-See full step by step tutorial [on Medium](https://medium.com/@evanca/set-up-your-portfolio-website-in-less-than-10-minutes-with-github-pages-d0efa8ff56fd).
-___
+- Data analysis and exploratory data analysis (EDA)
+- Machine learning and predictive modelling
+- Natural language processing (NLP)
+- Time series forecasting
+- Data visualisation and communication
+- Prototype analytics applications
 
-You can use the editor on GitHub to maintain and preview the content for your website in Markdown files.
+Each project focuses on explaining the **problem, methodology, and insights generated from data**, rather than only presenting code.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+---
 
-### Markdown
+## Portfolio Projects
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Examples of work currently featured on the site include:
 
-```markdown
-Syntax highlighted code block
+### Handwritten Prescription Recognition
+A deep learning project using **PyTorch** to classify handwritten medication names across **78 classes** using convolutional neural networks.
 
-# Header 1
-## Header 2
-### Header 3
+### Amazon Review Sentiment Analysis
+A natural language processing project comparing traditional machine learning models for customer review sentiment classification.
 
-- Bulleted
-- List
+### Electricity Demand Forecasting
+A time-series forecasting project exploring feature engineering and predictive modelling for electricity demand prediction.
 
-1. Numbered
-2. List
+### Interactive Analytics App
+A **Streamlit prototype** designed to present model outputs and insights through a stakeholder-friendly interface.
 
-**Bold** and _Italic_ and `Code` text
+---
 
-[Link](url) and ![Image](src)
+## Technology Used
+
+This website is built using:
+
+- **GitHub Pages**
+- **Jekyll**
+- **Minimal Theme**
+- **Custom CSS**
+- **HTML components within Markdown**
+
+The repository also contains supporting materials such as project presentations and documentation.
+
+---
+
+## Repository Structure
+
+```text
+/
+├── _layouts          # Jekyll layout templates
+├── assets
+│   ├── css           # Custom styling
+│   └── images        # Icons and profile assets
+├── pdf               # Project presentation slides
+├── index.md          # Main portfolio page
+├── _config.yml       # Site configuration
+└── README.md
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+---
 
-### Roadmap
+## Contact
 
-This project has been discontinued and is no longer actively maintained. No new features or fixes will be added. If you're interested in contributing, feel free to fork the repository and customize it to your needs.
-___
+If you'd like to discuss any of the projects or opportunities in **data analytics, data science, or machine learning**, feel free to connect.
 
-### References
+**LinkedIn:**  
+https://www.linkedin.com/in/danliwork/
 
-[1] Jekyll theme "Minimal" for GitHub Pages: https://github.com/pages-themes/minimal (CC0 1.0 Universal License)
-<br>[2] Dummy photo via: https://pixabay.com/photos/man-male-adult-person-caucasian-1209494/ (Pixabay License)
-<br>[3] Dummy thumbnail image created by rawpixel.com: https://www.freepik.com/free-vector/set-elements-infographic_2807573.htm (Standard Freepik License)
+**GitHub:**  
+https://github.com/ctrl-alt-dan
