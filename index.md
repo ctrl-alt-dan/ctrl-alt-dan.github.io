@@ -1,10 +1,10 @@
 ## Portfolio
+___
 ### About
   <p align="justify">
   Data-focused analytics professional with 6+ years of experience using data to drive digital performance, customer insights, and business decision-making.
   <br><br>
   Recently completed a Certificate in Data Science & AI with hands-on experience in Python, SQL, statistical analysis, machine learning, and predictive modelling. Experienced in data cleaning, exploratory analysis, experimentation, and translating complex datasets into clear insights that improve revenue, operational efficiency, and customer experience.
-  <br><br>
   </p>
 ---
 
