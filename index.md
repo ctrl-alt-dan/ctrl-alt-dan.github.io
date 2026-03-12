@@ -26,7 +26,7 @@ ___
 
   <div class="project-card">
     <h4>
-      <a href="https://github.com/ctrl-alt-dan/your-project-link">
+      <a href="https://github.com/ctrl-alt-dan/handwriting-recognition-with-CNN">
         Handwritten Prescription Recognition
       </a>
     </h4>
@@ -42,14 +42,14 @@ ___
     </div>
 
     <div class="project-actions">
-      <a class="project-button primary" href="https://github.com/ctrl-alt-dan/your-project-link">View Project</a>
+      <a class="project-button primary" href="https://github.com/ctrl-alt-dan/handwriting-recognition-with-CNN">View Project</a>
       <a class="project-button" href="pdf/Capstone-Powerpoint-Presentation.pdf">Slides</a>
     </div>
   </div>
 
   <div class="project-card">
     <h4>
-      <a href="https://github.com/ctrl-alt-dan/your-sentiment-project">
+      <a href="https://github.com/ctrl-alt-dan/Customer-Review-Sentiment-Analysis">
         Amazon Review Sentiment Analysis
       </a>
     </h4>
@@ -65,7 +65,7 @@ ___
     </div>
 
     <div class="project-actions">
-      <a class="project-button primary" href="https://github.com/ctrl-alt-dan/your-sentiment-project">View Project</a>
+      <a class="project-button primary" href="https://github.com/ctrl-alt-dan/Customer-Review-Sentiment-Analysis">View Project</a>
       <a class="project-button" href="pdf/Presentation-Amazon-Sentiment-analysis-Mini-Project-3.pdf">Slides</a>
     </div>
   </div>
