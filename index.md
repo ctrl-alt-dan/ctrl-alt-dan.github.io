@@ -70,51 +70,6 @@ ___
     </div>
   </div>
 
-  <div class="project-card">
-    <h4>
-      <a href="https://github.com/ctrl-alt-dan/your-timeseries-project">
-        Electricity Demand Forecasting
-      </a>
-    </h4>
-    <p>
-      Time series forecasting project exploring demand patterns, feature engineering, and predictive modelling to improve forecasting accuracy.
-    </p>
-
-    <div class="project-tags">
-      <span class="project-tag">Python</span>
-      <span class="project-tag">Forecasting</span>
-      <span class="project-tag">EDA</span>
-      <span class="project-tag">Time Series</span>
-    </div>
-
-    <div class="project-actions">
-      <a class="project-button primary" href="https://github.com/ctrl-alt-dan/your-timeseries-project">View Project</a>
-    </div>
-  </div>
-
-  <div class="project-card">
-    <h4>
-      <a href="https://github.com/ctrl-alt-dan/your-streamlit-project">
-        Interactive Analytics App
-      </a>
-    </h4>
-    <p>
-      Streamlit-based prototype for presenting model outputs and insights in a more accessible, stakeholder-friendly interface.
-    </p>
-
-    <div class="project-tags">
-      <span class="project-tag">Python</span>
-      <span class="project-tag">Streamlit</span>
-      <span class="project-tag">Analytics</span>
-      <span class="project-tag">UI</span>
-    </div>
-
-    <div class="project-actions">
-      <a class="project-button primary" href="LIVE_DEMO_LINK">Live Demo</a>
-      <a class="project-button" href="https://github.com/ctrl-alt-dan/your-streamlit-project">GitHub</a>
-    </div>
-  </div>
-
 </div>
 
 ---
@@ -136,7 +91,7 @@ Recently completed a Certificate in Data Science & AI with hands-on project work
 
 ### Education & Certifications
 
-- Certificat in Databases and SQL for Data Science with Python from IBM
+- Certificate in Databases and SQL for Data Science with Python from IBM
 - Certificate in Data Science & AI from University of Technology Sydney & Institute of Data
 - Masters Degree in Strategic Management & Marketing from Univesity of Wollongong
 - Bachelor of Commerce in Marketing from University of Wollongong
