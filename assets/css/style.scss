@@ -88,40 +88,53 @@ aside p {
   color: #4b5563;
 }
 
-
 /* =========================
    Title + Tagline
    ========================= */
 
-.site-title-text {
-  font-size: clamp(1.5rem, calc(1.2rem + 1.2vw), 1.9rem);
-  font-weight: 700;
-  letter-spacing: -0.025em;
-  line-height: 1.05;
-  color: #111827;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin: 0 0 2px 0;
+.sidebar-header {
+  margin-bottom: 8px;
   text-align: center;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.site-title-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: #111827;
+  margin: 0 0 4px 0;
+  text-align: center;
+
+  /* allow natural wrapping */
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
 }
 
 .site-tagline-text {
-  font-size: clamp(0.8rem, calc(0.72rem + 0.35vw), 1rem);
+  font-size: 1rem;
   font-weight: 500;
   color: #6b7280;
   letter-spacing: -0.01em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin: 0 0 12px 0;
+  margin: 0 0 14px 0;
   text-align: center;
   opacity: 0.9;
+
+  /* allow natural wrapping */
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
 }
 
 /* Fallback styling if old tagline markup still exists */
 .site-tagline {
-  margin-top: -6px;
+  margin-top: -4px;
   margin-bottom: 14px;
   font-size: 0.95rem;
   color: #6b7280;
@@ -144,8 +157,16 @@ aside img {
 }
 
 /* =========================
-   Sidebar content headings
+   Sidebar content blocks
    ========================= */
+
+.sidebar-about {
+  text-align: center;
+}
+
+.sidebar-about p:first-child {
+  margin-bottom: 1.1rem;
+}
 
 .sidebar-about h2,
 .sidebar-contact h2 {
@@ -153,6 +174,10 @@ aside img {
   margin-top: 1.6rem;
   margin-bottom: 0.6rem;
   color: #034161;
+}
+
+.sidebar-contact h2 {
+  text-align: center;
 }
 
 /* =========================
