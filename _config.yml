@@ -2,23 +2,42 @@ title: "Daniel (Ding Guo) Li"
 tagline: "Data Science | AI | Data Analysis"
 logo: "/images/logo.png?raw=true"
 description: >
-  <p align="center">
-  <a href="pdf/Daniel Li - CV.pdf">Resume</a> |
-  <a href="https://www.linkedin.com/in/danliwork/">LinkedIn</a> |
-  <a href="https://github.com/ctrl-alt-dan">GitHub</a>
-  </p>
-  <div class="profile-links">
-    <div class="profile-item">
-      <img src="/assets/nearby.png" alt="Location" class="profile-icon">
-      <span>Sydney, Australia</span>
-    </div>
-    <div class="profile-item">
-      <img src="/assets/phone.png" alt="Phone" class="profile-icon">
-      <a href="tel:+61450051428">0450 051 428</a>
-    </div>
-    <div class="profile-item">
-      <img src="/assets/email.png" alt="Email" class="profile-icon">
-      <a href="mailto:daniel@lifamily.me">daniel@lifamily.me</a>
+  <div class="sidebar-about">
+    <p>
+      <a href="pdf/Daniel Li - CV.pdf">Resume</a> |
+      <a href="https://www.linkedin.com/in/danliwork/">LinkedIn</a> |
+      <a href="https://github.com/ctrl-alt-dan">GitHub</a>
+    </p>
+
+    <h2>About</h2>
+
+    <p>
+      Data-focused analytics professional with 6+ years of experience using data to drive digital performance, customer insights, and business decision-making.
+    </p>
+
+    <p>
+      Recently completed a Certificate in Data Science &amp; AI with hands-on experience in Python, SQL, statistical analysis, machine learning, and predictive modelling. Experienced in data cleaning, exploratory analysis, experimentation, and translating complex datasets into clear insights that improve revenue, operational efficiency, and customer experience.
+    </p>
+  </div>
+
+  <div class="sidebar-contact">
+    <h2>Contact</h2>
+
+    <div class="profile-links">
+      <div class="profile-item">
+        <img src="/assets/nearby.png" alt="Location" class="profile-icon">
+        <span>Sydney, Australia</span>
+      </div>
+
+      <div class="profile-item">
+        <img src="/assets/phone.png" alt="Phone" class="profile-icon">
+        <a href="tel:+61450051428">0450 051 428</a>
+      </div>
+
+      <div class="profile-item">
+        <img src="/assets/email.png" alt="Email" class="profile-icon">
+        <a href="mailto:daniel@lifamily.me">daniel@lifamily.me</a>
+      </div>
     </div>
   </div>
 
