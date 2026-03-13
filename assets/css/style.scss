@@ -88,47 +88,48 @@ aside p {
   color: #4b5563;
 }
 
-.sidebar img,
-aside img {
-  border-radius: 18px;
-  box-shadow: 0 12px 32px rgba(3, 65, 97, 0.12);
-}
-
 /* =========================
-   Inline title + tagline
+   Sidebar profile card
    ========================= */
 
 .sidebar-header {
-  margin-bottom: 14px;
+  text-align: center;
+  padding: 18px 16px 22px 16px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgba(3, 65, 97, 0.06);
+  box-shadow: 0 8px 26px rgba(3, 65, 97, 0.08);
+  margin-bottom: 20px;
 }
 
-.site-title-inline {
-  display: flex;
-  align-items: baseline;
-  gap: 0.45rem;
-  margin: 0 0 0.35rem 0;
-  line-height: 1.05;
-  white-space: nowrap;
-  overflow: hidden;
-}
+/* =========================
+   Title + Tagline
+   ========================= */
 
 .site-title-text {
-  font-size: clamp(1.35rem, calc(1.08rem + 1vw), 1.6rem);
+  font-size: clamp(1.5rem, calc(1.2rem + 1.2vw), 1.9rem);
   font-weight: 700;
   letter-spacing: -0.025em;
+  line-height: 1.05;
   color: #111827;
-  min-width: 0;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 0 0 2px 0;
+  text-align: center;
 }
 
-.site-tagline-inline {
-  font-size: clamp(0.74rem, calc(0.66rem + 0.28vw), 0.95rem);
+.site-tagline-text {
+  font-size: clamp(0.8rem, calc(0.72rem + 0.35vw), 1rem);
   font-weight: 500;
   color: #6b7280;
-  min-width: 0;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 0 0 12px 0;
+  text-align: center;
+  opacity: 0.9;
 }
 
 /* Fallback styling if old tagline markup still exists */
@@ -138,13 +139,21 @@ aside img {
   font-size: 0.95rem;
   color: #6b7280;
   font-weight: 500;
+  text-align: center;
 }
 
-/* Smaller sidebar widths */
-@media screen and (max-width: 980px) {
-  .site-title-inline {
-    justify-content: center;
-  }
+/* =========================
+   Profile image
+   ========================= */
+
+.sidebar img,
+aside img {
+  width: 72%;
+  max-width: 240px;
+  display: block;
+  margin: 14px auto 14px auto;
+  border-radius: 50%;
+  box-shadow: 0 12px 28px rgba(3, 65, 97, 0.18);
 }
 
 /* =========================
@@ -160,24 +169,27 @@ aside img {
 }
 
 /* =========================
-   Contact links
+   Contact links / container
    ========================= */
 
 .profile-links {
-  margin-top: 28px;
+  margin: 18px auto 0 auto;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 420px;
+  width: fit-content;
+  max-width: 320px;
 }
 
 .profile-item {
   display: flex;
-  align-items: Justify;
+  align-items: center;
+  justify-content: flex-start;
   gap: 14px;
-  font-size: 0.82rem;
+  font-size: 1.02rem;
   line-height: 1.4;
   color: #5f6368;
+  text-align: left;
 }
 
 .profile-icon {
@@ -185,6 +197,7 @@ aside img {
   height: 22px;
   object-fit: contain;
   flex-shrink: 0;
+  opacity: 0.85;
 }
 
 .profile-item a,
@@ -368,7 +381,7 @@ section hr {
     width: 52%;
     max-width: 52%;
     margin: 18px auto 24px auto;
-    border-radius: 12px;
+    border-radius: 50%;
   }
 
   .sidebar p,
@@ -377,11 +390,12 @@ section hr {
   }
 
   .profile-links {
-    align-items: center;
+    margin: 18px auto 0 auto;
+    align-items: stretch;
   }
 
   .profile-item {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .project-card {
